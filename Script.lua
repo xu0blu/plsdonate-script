@@ -1,6 +1,6 @@
-loadstring(game:HtttpGet("https://github.com/xu0blu/plsdonate-script/raw/refs/heads/main/CoinDonation.lua"))
+loadstring(game:HttpGet("https://github.com/xu0blu/plsdonate-script/raw/refs/heads/main/CoinDonation.lua"))
 --https://raw.githubusercontent.com/xu0blu/decompiler-xml/refs/heads/main/script.lua
-loadstring(game:HtttpGet("https://raw.githubusercontent.com/xu0blu/decompiler-xml/refs/heads/main/script.lua"))
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xu0blu/decompiler-xml/refs/heads/main/script.lua"))
 local popup = require(game.ReplicatedStorage.popup)
 local event = Instance.new("Script")
 event.Enabled = false
