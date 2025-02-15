@@ -105,11 +105,11 @@ l__VFXObjects__1.CreateVfx.OnClientEvent:Connect(function(Directions, StartPosit
 				v10.Center.Ring:Emit(1)
 				v10.Center.Sparkles:Emit(5)
 				v10.Collect:Play()
-				if v10.Collect.PlaybackSpeed >= MaxSpeed then
-					v10.Collect.PlaybackSpeed = 2
-				else
-					v10.Collect.PlaybackSpeed = v11
-				end
+				--if v10.Collect.PlaybackSpeed >= MaxSpeed then
+				v10.Collect.PlaybackSpeed = 2
+				--else
+				--	v10.Collect.PlaybackSpeed = v11
+				--end
 				if v11 < 2 and v4 == 600 then
 					v11 += 0.01
 				elseif v11 > 2 and v4 == 600 then
