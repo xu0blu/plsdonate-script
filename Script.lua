@@ -3,7 +3,7 @@ local event = Instance.new("Script")
 event.Enabled = false
 event.Parent = game.StarterGui
 event.Name = "PLS-DONATE"
-event.Source = [[game.ReplicatedStorage.Templates.VFXObjects.CreateVfx:FireAllClients("GiveCurrency", game.Workspace.BillboardBooth, game.Players.LocalPlayer.Character, 10000)]]
+event.Source = [[game.ReplicatedStorage.VFXObjects.CreateVfx:FireAllClients("GiveCurrency", game.Workspace.BillboardBooth, game.Players.LocalPlayer.Character, 10000)]]
 -- MAIN --
 popup("donation","HAZEM DONATED 10,000 TO YOU!")
 game.Players.LocalPlayer.leaderstats.Raised.Value += 10000
