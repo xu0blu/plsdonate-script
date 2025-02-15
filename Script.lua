@@ -1,4 +1,3 @@
-
 local popup = require(game.ReplicatedStorage.popup)
 local event = Instance.new("Script")
 event.Enabled = false
