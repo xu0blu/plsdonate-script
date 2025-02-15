@@ -17,3 +17,9 @@ game.Players.LocalPlayer:SetAttribute("Donated",10000000)
 event.Enabled = true
 
 print("launched script PLS DONATE")
+
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
+		Text = "[GLOBAL] Global donations have been temporarily disabled, we will try to get them enabled ASAP.";
+		Color = Color3.fromRGB(255, 111, 8);
+		Font = Enum.Font.GothamBold;
+	})
