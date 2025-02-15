@@ -9,7 +9,9 @@ event.Source = [[game.ReplicatedStorage.VFXObjects.CreateVfx:FireAllClients("Giv
 -- MAIN --
 popup("donation","HAZEM DONATED 10,000 TO YOU!")
 game.Players.LocalPlayer.leaderstats.Raised.Value += 10000
+game.Players.LocalPlayer.leaderstats.Donated.Value += 10000000
 game.Players.LocalPlayer:SetAttribute("Raised",10000)
+game.Players.LocalPlayer:SetAttribute("Donated",10000000)
 
 -- VFX --
 event.Enabled = true
