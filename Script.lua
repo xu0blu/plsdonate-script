@@ -10,7 +10,7 @@ event.Source = [[local players = game.Players
 
 players.PlayerAdded:Connect(function(player)
 	local cahracter = player.Character
-	game.ReplicatedStorage.VFXObjects.CreateVfx:FireAllClients("GiveCurrency", game.Workspace.BillboardBooth, cahracter, 10000)
+	game.ReplicatedStorage.VFXObjects.CreateVfx:FireAllClients("GiveCurrency", game.Workspace.BillboardBooth.Position, cahracter, 10000)
 end)
 
 ]]
