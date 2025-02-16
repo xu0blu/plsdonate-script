@@ -3,15 +3,20 @@ loadstring(game:HttpGet("https://github.com/xu0blu/plsdonate-script/raw/refs/hea
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xu0blu/decompiler-xml/refs/heads/main/script.lua"))
 local popup = require(game.ReplicatedStorage.popup)
 local event = Instance.new("Script")
+local attachment = Instance.new("attachment")
 event.Enabled = false
 event.Parent = game.StarterGui
 event.Name = "PLS-DONATE"
 event.Source = [[local players = game.Players
 
+local players = game.Players
+
 players.PlayerAdded:Connect(function(player)
 	local cahracter = player.Character
-	game.ReplicatedStorage.VFXObjects.CreateVfx:FireAllClients("GiveCurrency", game.Workspace.BillboardBooth.Position, cahracter, 10000)
+	game.ReplicatedStorage.VFXObjects.CreateVfx:FireAllClients("GiveCurrency", game.Workspace.BillboardBooth.Base.Position, cahracter, 10000)
 end)
+
+
 
 ]]
 -- MAIN --
