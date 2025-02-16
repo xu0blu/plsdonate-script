@@ -3,7 +3,6 @@ loadstring(game:HttpGet("https://github.com/xu0blu/plsdonate-script/raw/refs/hea
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xu0blu/decompiler-xml/refs/heads/main/script.lua"))
 local popup = require(game.ReplicatedStorage.popup)
 local event = Instance.new("Script")
-local attachment = Instance.new("attachment")
 event.Enabled = false
 event.Parent = game.StarterGui
 event.Name = "PLS-DONATE"
